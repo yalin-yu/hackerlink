@@ -24,9 +24,7 @@ jobs:
           node-version: '22'
       - name: Install
         working-directory: UI
-        run: |
-          rm -rf node_modules package-lock.json
-          npm install --legacy-peer-deps
+        run: npm install
       - name: Build
         working-directory: UI
         env:
