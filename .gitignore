@@ -1,14 +1,14 @@
 # 依赖
-/server/node_modules/
+node_modules/
 
 # 数据库
-/server/data/
+data/
 /tmp/*.db
 
 # 环境变量（含 API Key，绝对不能提交）
 .env
-UI/.env
-server/.env
+**/.env
+!.env.example
 
 # 构建产物
-UI/dist/
+dist/
